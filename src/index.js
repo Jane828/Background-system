@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import IRouter from '../src/router';
+// import Admin from './admin'
+// import Irouter from './router-demo/router/router';
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+ReactDOM.render(<IRouter />, document.getElementById('root'));
+// ReactDOM.render(<Admin />, document.getElementById('root'));
+// ReactDOM.render(<Irouter />, document.getElementById('root'));
 serviceWorker.unregister();

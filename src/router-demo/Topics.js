@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 
-class App extends Component {
+
+class Topics extends Component {
     constructor(props) {
         super(props);
         this.state = {  };
     }
     render() {
         return (
-            <div>
-                {this.props.children}
-            </div>
+            <div>我是标题</div>
         );
     }
 }
 
-export default App;
+export default Topics;

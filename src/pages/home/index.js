@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
+import './index.less';
 
-class App extends Component {
+class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {  };
     }
     render() {
         return (
-            <div>
-                {this.props.children}
+            <div className='header-wrap'>
+                欢迎学习IMooc后台管理系统课程
             </div>
         );
     }
 }
 
-export default App;
+export default Home;

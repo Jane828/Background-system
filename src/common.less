@@ -1,0 +1,22 @@
+@import './style/default.less';
+.container{
+    display: flex;
+    .NavLeft{
+        // width: 15%;
+        // min-width: 180px;
+        height: calc(100vh);
+        color: @colorM;
+        background-color: @colorR;
+    }
+    .main{
+        // flex: 1;
+        height: calc(100vh);
+        background-color: @colorL;
+        overflow: auto; //要有height值，overflow:auto才起作用，因为内容的高度已超出height
+        .content{
+            position: relative;
+            padding: 20px;
+            color: @colorH;
+        }
+    }
+}

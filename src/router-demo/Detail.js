@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
-class App extends Component {
+class Detail extends Component {
     constructor(props) {
         super(props);
         this.state = {  };
     }
     render() {
         return (
-            <div>
-                {this.props.children}
-            </div>
+            <span>
+                获得的值：{this.props.match.params.value}
+            </span>
         );
     }
 }
 
-export default App;
+export default Detail;
